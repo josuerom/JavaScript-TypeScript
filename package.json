@@ -1,0 +1,14 @@
+{
+  "name": "exercies",
+  "version": "1.0.0",
+  "description": "conociendo la sintaxis de esos dos hermosos lenguajes",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 8087"
+  },
+  "author": "Josué Romero",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^13.0.0"
+  }
+}
