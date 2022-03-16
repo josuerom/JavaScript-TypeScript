@@ -1,5 +1,5 @@
 const flatten = arr => arr.reduce((acc, el) => acc.concat(el));
-const a = flatten([[1, 2, 3, [], 4], [5, [6, [7]]]]); //[1, 2, 3, [], 4, 5, [6, [7]]]
+const a = flatten([[1, 2, 3, [], 4], [5, [6, [7]]]]);
 console.log(a);
 
 const getBiggets = num => num.reduce((acc, el) => acc > el ? acc : el);
@@ -24,7 +24,7 @@ const multiply = (a, b) => {
   }
   return resultado;
 }
-const d = multiply(7, -7);
+const d = multiply(50, -55);
 console.log(d);
 
 const isPalindrome = (str) => {
@@ -32,7 +32,7 @@ const isPalindrome = (str) => {
   const lowered = str.toLowerCase();
   const splitted = lowered.split('');
   const reversed = splitted.reverse();
-  const joined = reversed.join();
+  const joined = reversed.join('');
   return lowered == joined;
 }
 const e = isPalindrome('Rodador');
