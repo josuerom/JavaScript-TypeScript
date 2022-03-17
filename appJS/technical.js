@@ -1,3 +1,4 @@
+console.time("time");
 const flatten = arr => arr.reduce((acc, el) => acc.concat(el));
 const a = flatten([[1, 2, 3, [], 4], [5, [6, [7]]]]);
 console.log(a);
@@ -18,7 +19,7 @@ console.log(c);
 const multiply = (a, b) => {
   let resultado = 0;
   const positivo = Math.abs(b) == b;
-
+  
   for (i = 0; i < Math.abs(b); i++) {
     resultado = positivo ? resultado + a : resultado - a;
   }
@@ -37,3 +38,4 @@ const isPalindrome = (str) => {
 }
 const e = isPalindrome('Rodador');
 console.log(e);
+console.timeEnd("time");
